@@ -3,4 +3,5 @@ export interface Students {
     name: string;
     age: number;
     feedback: string;
+    image: string;
 }
