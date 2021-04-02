@@ -10,6 +10,7 @@
         </li>
     </ul>
 
+    <!-- *ngIf conditionally includes a template when a boolean is true. When false, *ngIf removes the below below <div> from the DOM. -->
     <div *ngIf='selectedStudent'>
         <img class="profilepicture" src="{{selectedStudent.image}}" />
         <h2>{{selectedStudent.name | uppercase}}</h2>
