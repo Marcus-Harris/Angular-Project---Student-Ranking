@@ -11,12 +11,13 @@
     </ul>
 
     <div *ngIf='selectedStudent'>
+        <img class="" src="{{selectedStudent.image}}" />
         <h2>{{selectedStudent.name | uppercase}}</h2>
         <div>
             Rank is {{selectedStudent.ranking}}
         </div>
         <div>
-            <label for='student-feedback'>Edit feedback: </label>
+            <label for='student-feedback'>Feedback: </label>
             <!-- [(ngModel)] is Angular's two-way data binding syntax. You must opt-in to FormsModule in app.module.ts to run this. -->
             <input [(ngModel)]='selectedStudent.feedback' placeholder='Please provide feedback' class="textbox">
             <!-- Here [(ngModel)] binds the StudentConstant.feedback property to the HTML textbox so that data can flow in both directions: from the property to the textbox, and from the textbox back to the property. -->
